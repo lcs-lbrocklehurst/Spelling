@@ -7,6 +7,17 @@
 
 import Foundation
 
+struct Result: Identifiable {
+    // This stores what happened in a signle round of the game
+    let id = UUID()
+    // The item the user was randomly shown
+    let item: Item
+    // what the user guessed
+    let guessProvided: String
+    // Was the user correct or no
+    let outcome: Outcome
+}
+
 struct Item: Identifiable {
     
     let id = UUID()
